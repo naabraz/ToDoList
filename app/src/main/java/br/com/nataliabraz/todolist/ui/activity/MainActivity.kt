@@ -1,4 +1,4 @@
-package br.com.nataliabraz.todolist
+package br.com.nataliabraz.todolist.ui.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
