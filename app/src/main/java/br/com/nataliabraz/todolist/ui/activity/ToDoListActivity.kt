@@ -1,8 +1,8 @@
 package br.com.nataliabraz.todolist.ui.activity
 
 import android.content.Intent
+import android.graphics.Paint
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.CheckBox
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +10,7 @@ import br.com.nataliabraz.todolist.dao.ToDoItemDAO
 import br.com.nataliabraz.todolist.databinding.ActivityTodoListBinding
 import br.com.nataliabraz.todolist.databinding.TodoItemBinding
 import br.com.nataliabraz.todolist.ui.recyclerview.adapter.ToDoListAdapter
+
 
 class ToDoListActivity : AppCompatActivity() {
     private val dao = ToDoItemDAO()
@@ -66,9 +67,9 @@ class ToDoListActivity : AppCompatActivity() {
             when (view.id) {
                 checkBoxId -> {
                     if (checked) {
-                        Log.i("CHECKBOX", "CHECKED $checkBoxId")
+                        view.paintFlags = Paint.STRIKE_THRU_TEXT_FLAG
                     } else {
-                        Log.i("CHECKBOX", "UNCHECKED $checkBoxId")
+                        view.paintFlags = 0
                     }
                 }
             }
