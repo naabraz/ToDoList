@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
+    <CheckBox
         android:id="@+id/todo_item_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -14,6 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Organize books" />
+        tools:text="Organize books"
+        android:onClick="setUpItemCheck"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
