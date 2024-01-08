@@ -11,7 +11,6 @@ import br.com.nataliabraz.todolist.databinding.ActivityTodoListBinding
 import br.com.nataliabraz.todolist.databinding.TodoItemBinding
 import br.com.nataliabraz.todolist.ui.recyclerview.adapter.ToDoListAdapter
 
-
 class ToDoListActivity : AppCompatActivity() {
     private val dao = ToDoItemDAO()
 
